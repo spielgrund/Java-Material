@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
 
@@ -9,10 +7,15 @@ public class Main {
 
 
     public static void main(String[] args) {
-Byte b = 127;
-        System.out.println(b);
-b++;
-        System.out.println(b);
+        Person p1 = new Person(1,"Peter");
+        Buch b1 = new Buch("1234", "Moby Dick", "Roman");
+
+        System.out.println(p1.alter);
+        System.out.println(p1.name.toLowerCase());
+        p1.sageName();
+        p1.sageWort("Hallo!");
+        System.out.println(b1);
+
 
     }
 }
